@@ -7,7 +7,6 @@ var twoSum = function (nums, target) {
     let diff = target - nums[i];
     //console.log(m.has(diff),`m.get(${diff})=`, m.get(diff));
     if (m.has(diff) && m.get(diff) != i) {
-      result.push(i);
       return [m.get(diff), i];
     }
   }
